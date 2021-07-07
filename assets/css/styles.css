@@ -1,0 +1,28 @@
+body {
+    background-color: royalblue;
+}
+
+header {
+    width: 98%;
+    padding: 20px;
+    background-color: #48cae4;
+}
+
+header h1 {
+    text-align: center;
+}
+
+.box {
+    background-color: slategray;
+    width:auto;
+    padding:10px;
+    margin: 20px 1500px 0 40px;
+    border: black 2px solid;
+}
+
+/* media query */
+@media only screen and (max-width: 982px) {
+    body {
+      background-color: lightblue;
+    }
+  }
