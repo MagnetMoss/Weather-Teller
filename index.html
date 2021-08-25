@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +8,30 @@
     <title>Weather Teller</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
+
 <body>
-    <Header> <h1>The Weather</h1></Header>
-    <section> 
-        <form class="box">
+    <Header>
+        <h1>The Weather</h1>
+    </Header>
+    <section class="box">
+        <form>
             <Label>City:</Label>
             <br>
             <input type="text" placeholder="City Name" name="city" id="search">
-            <input type="button" value="submit" id= "submit">
+            <input type="button" value="submit" id="submit">
         </form>
+        <div class="boxF" id="forecast"></div>
     </section>
-    <div id=Display></div>
+    <div class="container">
+        <div class="boxDay" id=done></div>
+        <div class="boxDay" id=dtwo></div>
+        <div class="boxDay" id=dthree></div>
+        <div class="boxDay" id=dfour></div>
+        <div class="boxDay" id=dfive></div>
+    </div>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>

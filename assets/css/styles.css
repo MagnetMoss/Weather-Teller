@@ -12,9 +12,31 @@ header h1 {
     text-align: center;
 }
 
+.container {
+    /* width: 100vw; */
+    display: flex;
+    justify-content: space-between;
+}
+
 .box {
     background-color: slategray;
-    width:auto;
+    width: 200px;
+    padding:10px;
+    margin: 20px 1500px 0 40px;
+    border: black 2px solid;
+}
+
+.boxDay {
+    background-color: slategray;
+    width: 200px;
+    padding:10px;
+    margin: 20px;
+    border: black 2px solid;
+}
+
+.boxF {
+    background-color: slategray;
+    width: 200px;
     padding:10px;
     margin: 20px 1500px 0 40px;
     border: black 2px solid;
