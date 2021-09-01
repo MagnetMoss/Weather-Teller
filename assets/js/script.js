@@ -24,7 +24,7 @@ buttonEl.addEventListener("click", function (event) {
     cityInfo.push(searchEl.value)
     localStorage.setItem("cities", JSON.stringify(cityInfo))
     JSON.parse(localStorage.getItem("city"))
-    var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + searchEl.value + "&units=imperial&appid=54d3a93a184709884d7ca3b31ea089e4";
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + searchEl.value + "&units=imperial&appid=54d3a93a184709884d7ca3b31ea089e4";
     fetch(queryURL)
         .then((response) => response.json())
         .then((response) => {
@@ -37,7 +37,7 @@ buttonEl.addEventListener("click", function (event) {
             document.querySelector("#forecast").innerHTML = `${today} <br> Temperature: ${response.main.temp} <br> Wind Speed: ${response.wind.speed} <br> Humidity: ${response.main.humidity}`
         });
 
-    var fiveDay = "http://api.openweathermap.org/data/2.5/forecast?q=" + searchEl.value + "&units=imperial&appid=81fcfb9fe1b9f885bd21e9545869892b"
+    var fiveDay = "https://api.openweathermap.org/data/2.5/forecast?q=" + searchEl.value + "&units=imperial&appid=81fcfb9fe1b9f885bd21e9545869892b"
     fetch(fiveDay)
         .then((response) => response.json())
         .then((response) => {
